@@ -135,7 +135,7 @@ public class EyeRestReminder implements Reminder{
 		JPanel message3Panel = new JPanel(new FlowLayout());
 		message3Panel.add(message3Label);
 		
-		JLabel message4Label = new JLabel("2. And blink your eyes for 20 times. This should release some some stress from your eyes.");
+		JLabel message4Label = new JLabel("2. And blink your eyes for 20 times. This should release some stress from your eyes.");
 		message4Label.setFont(new Font("Times New Roman", 1, 14));
 		JPanel message4Panel = new JPanel(new FlowLayout());
 		message4Panel.add(message4Label);
