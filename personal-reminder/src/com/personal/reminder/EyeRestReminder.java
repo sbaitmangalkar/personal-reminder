@@ -112,7 +112,7 @@ public class EyeRestReminder implements Reminder{
 	private void remind(final String name){
 		System.out.println("Successfully minimized!!");
 		try{
-			Thread.sleep(1 * 60 * 1000);
+			Thread.sleep(20 * 60 * 1000);
 		}catch(InterruptedException e){
 			System.out.println("Something went wrong in reminding!!");
 			System.out.println("Please restart the app.");
