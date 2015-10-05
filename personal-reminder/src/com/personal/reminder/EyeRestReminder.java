@@ -1,5 +1,6 @@
 package com.personal.reminder;
 
+import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.Frame;
@@ -70,6 +71,8 @@ public class EyeRestReminder implements Reminder{
 	}
 	
 	/**
+	 * Shows the basic information of the app
+	 * when user enters his name and hits start.
 	 * 
 	 * @param name
 	 */
@@ -106,6 +109,8 @@ public class EyeRestReminder implements Reminder{
 	
 	
 	/**
+	 * Reminds the user on every 20th min to take
+	 * eye rest.
 	 * 
 	 * @param name
 	 */
@@ -156,6 +161,7 @@ public class EyeRestReminder implements Reminder{
 	}
 	
 	/**
+	 * Main method.
 	 * 
 	 * @param args
 	 */
