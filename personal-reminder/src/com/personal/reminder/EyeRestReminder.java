@@ -1,6 +1,5 @@
 package com.personal.reminder;
 
-import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.Frame;
@@ -22,6 +21,7 @@ public class EyeRestReminder implements Reminder{
 	@Override
 	public void reminderForEyeRest() {
 		mainAppFrame = new JFrame("Remind Master v1.0");
+		mainAppFrame.setResizable(false);
 		mainAppPanel = new JPanel(new FlowLayout());
 		buildGUI();
 		
@@ -117,7 +117,7 @@ public class EyeRestReminder implements Reminder{
 	private void remind(final String name){
 		System.out.println("Successfully minimized!!");
 		try{
-			Thread.sleep(20 * 60 * 1000);
+			Thread.sleep(1 * 60 * 1000);
 		}catch(InterruptedException e){
 			System.out.println("Something went wrong in reminding!!");
 			System.out.println("Please restart the app.");
@@ -156,6 +156,7 @@ public class EyeRestReminder implements Reminder{
 		mainAppPanel.add(message4Panel);
 		mainAppPanel.add(message5Panel);
 		mainAppFrame.setState(JFrame.NORMAL);
+		mainAppFrame.setAlwaysOnTop(true);
 		mainAppFrame.setSize(880, 200);
 		
 	}
